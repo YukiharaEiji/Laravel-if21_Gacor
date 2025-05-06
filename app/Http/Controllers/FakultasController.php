@@ -12,10 +12,10 @@ class FakultasController extends Controller
      */
     public function index()
     {
-        //
-        $fakultas = Fakultas::all();
+        // akses model Fakultas
+        $fakultas = Fakultas::all();  // select * from fakultas
         // dd($fakultas);
-        return view('fakultas.index')->with('fakultas',$fakultas);
+        return view('fakultas.index')->with('fakultas', $fakultas);
     }
 
     /**

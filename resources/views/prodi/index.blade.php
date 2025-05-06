@@ -1,4 +1,5 @@
-<h1>Prodi</h1>
+<h1>Program Studi</h1>
+
 @foreach ($prodi as $item)
-    {{$item->nama}} {{$item->Kaprodi}}
+    {{ $item->nama }} {{ $item->kaprodi }}
 @endforeach
