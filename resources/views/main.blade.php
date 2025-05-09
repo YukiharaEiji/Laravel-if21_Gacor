@@ -309,8 +309,8 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class='nav-link' href='{{ route('fakultas,index') }}'>
-                  <i class="nav-icon bi bi-map"></i>
+                <a class='nav-link' href='/dist/pages/generate/theme'>
+                  <i class="nav-icon bi bi-palette"></i>
                   <p>Theme Generate</p>
                 </a>
               </li>
