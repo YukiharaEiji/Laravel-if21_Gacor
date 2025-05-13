@@ -3,7 +3,6 @@
 @section('title','Fakultas')
 @section('content')
 
-
 <!--begin::Row-->
             <div class="row">
               <div class="col-12">
@@ -33,6 +32,7 @@
                   </div>
                   <div class="card-body">
                     <table class="table">
+                      <a href="{{route('fakultas.create')}}" class="btn btn-primary">Tambah</a>
                         <thead>
                             <tr>
                                 <th>Nama</th>
