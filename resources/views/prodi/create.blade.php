@@ -1,6 +1,6 @@
-@extends('main')
-@section('title', 'Fakultas')
-@section('content')
+@extends('view: main')
+@section('section: title', content: 'Fakultas')
+@section('section: content')
 <!--begin:: Row-->
 <div class="row">
     <div class="col-12">
@@ -16,7 +16,7 @@
                 <!--begin:: Body-->
                 <div class="card-body">
                     <div class="mb-3">
-                        <label for="nama" class="form-label">Nama Fakultas</label>
+                        <label for="nama" class="form-label">Nama Prodi</label>
                         <input type="text" class="form-control" name="nama">
                     </div>
                     <div class="mb-3">
@@ -29,6 +29,11 @@
   <div class="mb-3">
  <label for="nama_wadek" class="form-label">Nama Wadek</label>
  <input type="text" class="form-control" name="nama_wadek">
+ <select name="fakultas_id" class="form-control">
+    @foreach ($fakultas as $item)
+    <option value="{{ $item -> id }}">
+    {{ $item->nama }}</option>
+ </select>
 </div>
 </div>
 <!--end:: Body-->
